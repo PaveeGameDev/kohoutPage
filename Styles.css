@@ -50,6 +50,7 @@ header > p{
 .about > img{
     float: left;
     margin: 1rem;
+    border-radius: 100%;
 }
 
 .about>p{
