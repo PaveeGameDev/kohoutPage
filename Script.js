@@ -1,27 +1,38 @@
 const collection = document.getElementsByClassName("Cnum");
-const startCounter =  new Date(2007, 08, 12, 15, 35, 49);
+const startCounter =  new Date(2007, 12, 3, 22, 34, 28);
 let currentDate =  Date.now();
 let firstDate = startCounter.getTime();
 
+let dateObj = {};
 
+function ShowDates() {
+    currentDate = Date.now();
+    const dateSubtracted = currentDate - firstDate;
+    const date = new Date(dateSubtracted);
+    dateObj = {
+        seconds: date.getSeconds(),
+        minutes: date.getMinutes(),
+        hours: date.getHours(),
+        days: date.getDate(),
+        months: date.getMonth(),
+        years: date.getFullYear() - 1970
+    }
+    
+    collection[0].innerHTML = dateObj.years;
+    collection[1].innerHTML = dateObj.months;
+    collection[2].innerHTML = dateObj.days;
+    collection[3].innerHTML = dateObj.hours;
+    collection[4].innerHTML = dateObj.minutes;
+    collection[5].innerHTML = dateObj.seconds;
 
-
-
-function GetDateSubtraction(currentDate, firstDate) {
-    let differenceInDates = currentDate - firstDate;
-    return differenceInDates;
 }
 
-Window.onload = function ShowDates(differenceInDates) {
-    let date = {
-        miliseconds: differenceInDates / 1000,
-        seconds: miliseconds%60,
-        minutes: seconds%60,
-        hours: minutes%60,
-        days: hours%24,
-        months: days%30,
-        years: months%12
-    }
+ShowDates();
+startTimer();         
 
-    console.log(date);
+function startTimer() {
+    var timer;
+    timer = setInterval(function() {
+        ShowDates();
+    }, 1000);
 }
