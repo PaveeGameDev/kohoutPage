@@ -36,3 +36,7 @@ function startTimer() {
         ShowDates();
     }, 1000);
 }
+
+function redirect() {
+    window.open("https://play.google.com/store/apps/dev?id=5800933701372498541", '_blank');
+}
