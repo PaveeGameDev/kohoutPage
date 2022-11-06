@@ -64,14 +64,13 @@ header > h1{
 }
 
 .about>p{
-    text-align: justify;;
+    text-align: justify;
+    margin: 1rem;
 }
 
 /*Counter*/
 .counter{
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     margin-bottom: 4rem;
 }
@@ -79,6 +78,13 @@ header > h1{
 .containerCounter{
     display: grid;
     grid-template: repeat(3, 10rem) / repeat(2, 40vw);
+}
+
+.gridContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .containerCounter > div{
@@ -92,4 +98,60 @@ header > h1{
     font-size: 4rem;
     margin: 0.5;
     margin-bottom: 0;
+}
+
+/*Support*/
+.support{
+    margin-bottom: 4rem;
+    margin-top: 6rem;
+    
+}
+
+.supportContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.supportBlock{
+    background-color: #d1d1d1;
+    margin: 2rem;
+    border-radius: 10%;
+    width: 60vw;
+    height: 30vh;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    overflow: hidden;
+}
+
+.supportBlock > .nameContainer{
+    width: 100%;
+    border-bottom: 3px solid #3c3c3c;
+    justify-content: center;
+    display: flex
+}
+
+.name{
+    color: #3c3c3c;
+    font-size: 2.5rem;
+}
+
+.priceContainer{
+    float: left;
+    border-right: 2px solid #3c3c3c;
+    border-bottom: 2px solid #3c3c3c;
+    padding: 3.5% 10%;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+.supportBlock >.priceContainer > .price{
+    color:#3c3c3c;
+}
+
+.supportBlock > p{
+    text-align: justify;
+    color: #3c3c3c;
+    margin: .5rem 1rem 1rem 1rem;
 }
