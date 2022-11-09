@@ -26,6 +26,9 @@ h2{
     margin-bottom: 1rem;
 }
 
+button{
+    border: 0px;
+}
 /* specific */
 
 /*Header*/
@@ -157,4 +160,58 @@ header > h1{
     text-align: justify;
     color: #3c3c3c;
     margin: .5rem 1rem 1rem 1rem;
+}
+
+
+/*Shop*/
+.shop{
+    margin-bottom: 4rem;
+    margin-top: 6rem;
+    
+}
+
+.shopContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.shopItem{
+    width: 25rem;
+    height: 25rem;
+    border: 3px solid #3c3c3c;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: #d1d1d1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buy{
+    background-color: #d1d1d1;
+    width: 40%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+}
+
+.shopItem > .shopImg{
+    width: 100%;
+    height: 100%;
+    background-image: url(Images/images.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.shopItem > p{
+    color: #3c3c3c;
+}
+
+.buy > p{
+    color: #3c3c3c;
 }
