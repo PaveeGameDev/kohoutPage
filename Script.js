@@ -56,9 +56,9 @@ function redirect() {
             window.open("https://pavee.itch.io/", '_blank');
             break;
         
-            default:
+        default:
             console.log(randomSwitcher);
-            break;
+        break;
     }
         
 }

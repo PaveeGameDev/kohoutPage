@@ -57,7 +57,7 @@ button{
 
 header > h1{
     display: inline-block;
-    margin-left: 30vw;
+    margin-left: 20vw;
 }
 
 /*About*/
@@ -67,6 +67,7 @@ header > h1{
 .about > img{
     float: left;
     margin: 1rem;
+    margin-right: 2rem;
     border-radius: 100%;
 }
 
@@ -238,4 +239,20 @@ header > h1{
 
 .Pillow{
     background-image: url(Images/img-8739.jpg);
+}
+
+.Tshirt{
+    background-image: url(Images/921034_1.webp);
+}
+
+.Poster{
+    background-image: url(Images/Rooster-Poster-Start-Each-Day-With-A-Gratefull-Heart.jpg);
+}
+
+.Mask{
+    background-image: url(Images/shopping.webp);
+}
+
+.Car{
+    background-image: url(Images/BN-XF275_MYRIDE_750RV_20180129144707.jpg);
 }
