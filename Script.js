@@ -38,5 +38,27 @@ function startTimer() {
 }
 
 function redirect() {
-    window.open("https://play.google.com/store/apps/dev?id=5800933701372498541", '_blank');
+    let randomSwitcher = Math.floor(Math.random()*4);
+    switch (randomSwitcher) {
+        case 0:
+            window.open("https://play.google.com/store/apps/dev?id=5800933701372498541", '_blank');      
+            break;
+    
+        case 1:
+            window.open("https://play.google.com/store/apps/details?id=com.Pavee.NeonRush", '_blank');
+            break;
+
+        case 2:
+            window.open("https://play.google.com/store/apps/details?id=com.PaVee.AnimalTrailRun", '_blank');
+            break;
+        
+        case 3:
+            window.open("https://pavee.itch.io/", '_blank');
+            break;
+        
+            default:
+            console.log(randomSwitcher);
+            break;
+    }
+        
 }
