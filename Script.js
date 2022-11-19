@@ -2,6 +2,8 @@ const collection = document.getElementsByClassName("Cnum");
 const startCounter =  new Date(2007, 12, 3, 22, 34, 28);
 let currentDate =  Date.now();
 let firstDate = startCounter.getTime();
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
 
 let dateObj = {};
 
@@ -91,19 +93,29 @@ function animateMenu(menu){
     animate[2].classList.add("MAnimR2");
     animate[3].classList.add("MAnimR1");
 
-    setTimeout(() => {
-        animate[3].style.display = "none";
-    }, 500);
-    setTimeout(() => {
-        animate[2].style.display = "none";
-    }, 1000);
-    setTimeout(() => {
-        animate[1].style.display = "none";
-    }, 1500);
-    setTimeout(() => {
-        animate[0].style.display = "none";
-    }, 2000);
-    
+
+    if (isMobile) {
+        setTimeout(() => {
+            animate[3].style.display = "none";
+        }, 250);
+        setTimeout(() => {
+            animate[2].style.display = "none";
+        }, 500);
+        setTimeout(() => {
+            animate[1].style.display = "none";
+        }, 750);
+        setTimeout(() => {
+            animate[0].style.display = "none";
+        }, 1000);
+
+    }else{
+        for (let index = 0; index < 4; index++) {
+            setTimeout(() => {
+                animate[index].style.display = "none";
+            }, 250);
+        }
+    }
+
     setTimeout(function(){
         const menu = document.getElementsByClassName("menu");
         menu[0].style.display = "none";
@@ -115,5 +127,24 @@ function animateMenu(menu){
         animate[1].style.display = "block";
         animate[2].style.display = "block";
         animate[3].style.display = "block";
-    }, 2000);
+    }, 1000);
+}
+function ScrollToPart(part) {
+    if (isMobile) {
+        if (part == "counter") {
+            window.scrollTo(0, document.getElementById("counter").offsetTop - 100);
+        } else if (part == "support") {
+            window.scrollTo(0, document.getElementById("support").offsetTop - 100);
+        } else if (part == "shop") {
+            window.scrollTo(0, document.getElementById("shop").offsetTop - 100);
+        }
+    }else{
+        if (part == "counter") {
+            window.scrollTo(0, document.getElementById("counter").offsetTop - 200);
+        } else if (part == "support") {
+            window.scrollTo(0, document.getElementById("support").offsetTop - 200);
+        } else if (part == "shop") {
+            window.scrollTo(0, document.getElementById("shop").offsetTop - 200);
+        }
+    }
 }

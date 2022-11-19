@@ -57,10 +57,6 @@ ul{
     margin: 0;
     padding: 0;
 }
-
-a:hover{
-    color: var(--thirdColor);
-}
 /* specific */
 
 /*Header*/
@@ -154,35 +150,35 @@ li > div{
 }
 
 .MAnim1{
-    animation: appear 0.5s ease-in;
+    animation: appear 0.25s ease-in;
 }
 
 .MAnim2{
-    animation: appear 1s ease-in;
+    animation: appear .5s ease-in;
 }
 
 .MAnim3{
-    animation: appear 1.5s ease-in;
+    animation: appear .75s ease-in;
 }
 
 .MAnim4{
-    animation: appear 2s ease-in;
+    animation: appear 1s ease-in;
 }
 
 .MAnimR1{
-    animation: disappear 0.5s ease-in;
+    animation: disappear 0.25s ease-in;
 }
 
 .MAnimR2{
-    animation: disappear 1s ease-in;
+    animation: disappear .5s ease-in;
 }
 
 .MAnimR3{
-    animation: disappear 1.5s ease-in;
+    animation: disappear .75s ease-in;
 }
 
 .MAnimR4{
-    animation: disappear 2s ease-in;
+    animation: disappear 1s ease-in;
 }
 
 /*About*/
@@ -474,11 +470,11 @@ li > div{
 
 @media screen and (min-width: 900px) {
     :root{
-        font-size: 400%;
+        font-size: 100%;
     }
 
     body{
-        margin: 0 7%;
+        margin: 0 7vw;
     }
 
     h2{
@@ -493,9 +489,9 @@ li > div{
     }
 
     .aboutContainer > img{
-        width: 150%;
+        width: 30vw;
         height: auto;
-        box-shadow: 0 0 100px 0px white;
+        box-shadow: 0 0 50px 0px white;
     }
 
     .containerCounter{
@@ -540,5 +536,25 @@ li > div{
     .shopItem{
         width: 25vw;
         height: 25vw;
+    }
+
+    .shopItem > .shopName{
+        font-size: 4rem;
+    }
+
+    .buy > p{
+        font-size: 2.5rem;
+    }
+
+    ul{
+        flex-direction: row;
+    }
+
+    li{
+        width: 21.5vw;
+    }
+
+    .menu{
+        width: 86vw;    
     }
 }
