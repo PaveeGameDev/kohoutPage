@@ -17,6 +17,10 @@ p{
     font-size: 2rem;
 }
 
+body{
+    margin: 0 10vw;
+}
+
 h1,h2,h3{
     color: var(--secondaryColor);
     margin-left: 2rem;
@@ -394,7 +398,7 @@ header > h1{
     }
 
     .supportBlock > p{
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .priceContainer{
@@ -403,7 +407,21 @@ header > h1{
         justify-content: center;
     }
 
+    .priceContainer > .price{
+        font-size: 6rem;
+    }
+
     .priceCheaper > p{
         text-decoration-thickness: 15%;
+    }
+
+    .shopContainer{
+        display: grid;
+        grid-template: repeat(2, 30vw) / repeat(3, 30vw);
+    }
+
+    .shopItem{
+        width: 25vw;
+        height: 25vw;
     }
 }
