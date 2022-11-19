@@ -15,10 +15,30 @@
   <body>
     <header class="header">
       <h1>Kohout's page</h1>
-      <button class="menuOpener">
+      <button class="menuOpener" onclick="MenuSwitch()">
         <img src="Images/menu (1).png" alt="" />
       </button>
     </header>
+    <section class="menu">
+      <ul>
+        <li class="MAnim1 animate" onclick="MenuSwitch()">
+          <div><a href="#">About</a></div>
+        </li>
+        <li class="MAnim2 animate" onclick="MenuSwitch()">
+          <div><a href="#counter">Badass counter</a></div>
+        </li>
+        <li class="MAnim3 animate" onclick="MenuSwitch()">
+          <div><a href="#support">Support</a></div>
+        </li>
+        <li class="MAnim4 animate" onclick="MenuSwitch()">
+          <div><a href="#shop">Shop</a></div>
+        </li>
+      </ul>
+    </section>
+    <section class="headerSupporter">
+      <div></div>
+    </section>
+
     <div class="about">
       <h2>About Kohout</h2>
       <div class="aboutContainer">
@@ -36,7 +56,7 @@
         </p>
       </div>
     </div>
-    <section class="counter">
+    <section class="counter" id="counter">
       <h2>Kohout beeing badass counter</h2>
 
       <div class="gridContainer">
@@ -68,7 +88,7 @@
         </div>
       </div>
     </section>
-    <section class="support">
+    <section class="support" id="support">
       <h2>Support Kohout</h2>
       <div class="supportContainer">
         <button class="supportBlock" onclick="redirect()">
@@ -112,7 +132,7 @@
         </button>
       </div>
     </section>
-    <section class="shop">
+    <section class="shop" id="shop">
       <h2>Shop</h2>
       <div class="shopContainer">
         <div class="shopItem">
