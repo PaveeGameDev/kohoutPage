@@ -62,3 +62,58 @@ function redirect() {
     }
         
 }
+
+function MenuSwitch() {
+    const menu = document.getElementsByClassName("menu");
+    switch (menu[0].style.display) {
+        case "none":
+            menu[0].style.display = "block";
+            console.log("Menu is now visible");
+            break;
+    
+        case "block":
+            console.log("Menu is now hidden");
+            animateMenu(menu);
+            break;
+
+        default:
+            menu[0].style.display = "block";
+            console.log("Menu is now visible");
+            break;
+        
+    }
+}
+
+function animateMenu(menu){
+    const animate = document.getElementsByClassName("animate");
+    animate[0].classList.add("MAnimR4");
+    animate[1].classList.add("MAnimR3");
+    animate[2].classList.add("MAnimR2");
+    animate[3].classList.add("MAnimR1");
+
+    setTimeout(() => {
+        animate[3].style.display = "none";
+    }, 500);
+    setTimeout(() => {
+        animate[2].style.display = "none";
+    }, 1000);
+    setTimeout(() => {
+        animate[1].style.display = "none";
+    }, 1500);
+    setTimeout(() => {
+        animate[0].style.display = "none";
+    }, 2000);
+    
+    setTimeout(function(){
+        const menu = document.getElementsByClassName("menu");
+        menu[0].style.display = "none";
+        animate[0].classList.remove("MAnimR4");
+        animate[1].classList.remove("MAnimR3");
+        animate[2].classList.remove("MAnimR2");
+        animate[3].classList.remove("MAnimR1");
+        animate[0].style.display = "block";
+        animate[1].style.display = "block";
+        animate[2].style.display = "block";
+        animate[3].style.display = "block";
+    }, 2000);
+}
