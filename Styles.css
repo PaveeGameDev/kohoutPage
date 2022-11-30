@@ -481,6 +481,7 @@ li > div{
     color: red;
     height: 100%;
     font-size: 3rem;
+    font-weight: bold;
 }
 
 /*Different monitors*/
@@ -617,5 +618,10 @@ li > div{
 
     .menu{
         width: 86vw;    
+    }
+
+    .buySector{
+        width: 30vw;
+        height: auto;
     }
 }
