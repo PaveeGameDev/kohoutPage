@@ -44,7 +44,24 @@
     <section class="headerSupporter">
       <div></div>
     </section>
-
+    <section class="buySector">
+      <div class="headBuySector">
+        <h3>Buy item</h3>
+        <p class="back" onclick="Back()">X</p>
+      </div>
+      <div class="content">
+        <img
+          class="itemImg"
+          src="Images/WhatsApp Image 2022-11-15 at 07.56.46.jpeg"
+          alt=""
+        />
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem,
+          quam!
+        </p>
+        <a onclick="redirect()" class="buyItemClicked">Buy</a>
+      </div>
+    </section>
     <div class="about">
       <h2>About Kohout</h2>
       <div class="aboutContainer">
@@ -108,7 +125,7 @@
             <p class="price priceBest">10$</p>
           </div>
           <p class="Sdesc">
-            Ultimate package. You`ll get all information about Kohout and his
+            Ultimate bundle. You`ll get all information about Kohout and his
             life.
           </p>
         </button>
@@ -144,7 +161,7 @@
         <div class="shopItem">
           <p class="shopName">Statue</p>
           <div class="shopImg Statue">
-            <button class="buy" onclick="redirect()">
+            <button class="buy" onclick="Buy('Statue')">
               <p>Buy</p>
             </button>
           </div>
@@ -152,7 +169,7 @@
         <div class="shopItem">
           <p class="shopName">Pillow</p>
           <div class="shopImg Pillow">
-            <button class="buy" onclick="redirect()">
+            <button class="buy" onclick="Buy('Pillow')">
               <p>Buy</p>
             </button>
           </div>
@@ -160,7 +177,7 @@
         <div class="shopItem">
           <p class="shopName">T-Shirt</p>
           <div class="shopImg Tshirt">
-            <button class="buy" onclick="redirect()">
+            <button class="buy" onclick="Buy('Tshirt')">
               <p>Buy</p>
             </button>
           </div>
@@ -168,7 +185,7 @@
         <div class="shopItem">
           <p class="shopName">Poster</p>
           <div class="shopImg Poster">
-            <button class="buy" onclick="redirect()">
+            <button class="buy" onclick="Buy('Poster')">
               <p>Buy</p>
             </button>
           </div>
@@ -176,7 +193,7 @@
         <div class="shopItem">
           <p class="shopName">Mask</p>
           <div class="shopImg Mask">
-            <button class="buy" onclick="redirect()">
+            <button class="buy" onclick="Buy('Mask')">
               <p>Buy</p>
             </button>
           </div>
@@ -184,7 +201,7 @@
         <div class="shopItem">
           <p class="shopName">Car</p>
           <div class="shopImg Car">
-            <button class="buy" onclick="redirect()">
+            <button class="buy" onclick="Buy('Car')">
               <p>Buy</p>
             </button>
           </div>
@@ -193,7 +210,7 @@
     </section>
     <footer>
       <div class="footerDiv">
-        <p>Made by Pavee on 17.11.2022</p>
+        <p>Made by Pavee on 28.11.2022</p>
       </div>
     </footer>
     <script src="Script.js"></script>

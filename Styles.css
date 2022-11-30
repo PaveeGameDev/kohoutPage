@@ -28,7 +28,7 @@ h1{
     font-size: 4rem;
     margin-left: 0;
 }
-h2{
+h2, h3{
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
@@ -150,35 +150,35 @@ li > div{
 }
 
 .MAnim1{
-    animation: appear 0.25s ease-in;
+    animation: appear 0.125s ease-in;
 }
 
 .MAnim2{
-    animation: appear .5s ease-in;
+    animation: appear .25s ease-in;
 }
 
 .MAnim3{
-    animation: appear .75s ease-in;
+    animation: appear .375s ease-in;
 }
 
 .MAnim4{
-    animation: appear 1s ease-in;
+    animation: appear .5s ease-in;
 }
 
 .MAnimR1{
-    animation: disappear 0.25s ease-in;
+    animation: disappear 0.125s ease-in;
 }
 
 .MAnimR2{
-    animation: disappear .5s ease-in;
+    animation: disappear .25s ease-in;
 }
 
 .MAnimR3{
-    animation: disappear .75s ease-in;
+    animation: disappear .375s ease-in;
 }
 
 .MAnimR4{
-    animation: disappear 1s ease-in;
+    animation: disappear .5s ease-in;
 }
 
 /*About*/
@@ -386,27 +386,27 @@ li > div{
 }
 
 .Statue{
-    background-image: url(Images/il_fullxfull.4083503930_hejw.avif);
+    background-image: url(Images/Statue.avif);
 }
 
 .Pillow{
-    background-image: url(Images/img-8739.jpg);
+    background-image: url(Images/Pillow.jpg);
 }
 
 .Tshirt{
-    background-image: url(Images/921034_1.webp);
+    background-image: url(Images/Tshirt.webp);
 }
 
 .Poster{
-    background-image: url(Images/Rooster-Poster-Start-Each-Day-With-A-Gratefull-Heart.jpg);
+    background-image: url(Images/Poster.jpg);
 }
 
 .Mask{
-    background-image: url(Images/shopping.webp);
+    background-image: url(Images/Mask.webp);
 }
 
 .Car{
-    background-image: url(Images/BN-XF275_MYRIDE_750RV_20180129144707.jpg);
+    background-image: url(Images/Car.jpg);
 }
 
 
@@ -421,6 +421,67 @@ li > div{
     flex-direction: column;
 }
 
+/*BuySector*/
+.buySector{
+    width: 80vw;
+    height: auto;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primaryColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;   
+}
+
+.content{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3rem;
+}
+
+.content > img{
+    width: 100%;
+    border-radius: 30%;
+    height: auto;
+}
+
+.content > p{
+    margin-bottom: .5rem;
+}
+
+.buyItemClicked{
+    font-size: 4rem;
+    border: 3px solid var(--secondaryColor);
+    padding: 0 1rem;
+    border-radius: 30%;
+    margin: 2rem 0;
+}
+
+.headBuySector{
+    display: flex;
+    margin: 0;
+}
+
+.headBuySector > h3{
+    padding: 0;
+    font-size: 3rem;
+}
+
+.back{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); 
+    color: red;
+    height: 100%;
+    font-size: 3rem;
+}
 
 /*Different monitors*/
 @media screen and (min-width: 600px) {

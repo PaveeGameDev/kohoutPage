@@ -97,22 +97,22 @@ function animateMenu(menu){
     if (isMobile) {
         setTimeout(() => {
             animate[3].style.display = "none";
-        }, 250);
+        }, 125);
         setTimeout(() => {
             animate[2].style.display = "none";
-        }, 500);
+        }, 250);
         setTimeout(() => {
             animate[1].style.display = "none";
-        }, 750);
+        }, 375);
         setTimeout(() => {
             animate[0].style.display = "none";
-        }, 1000);
+        }, 500);
 
     }else{
         for (let index = 0; index < 4; index++) {
             setTimeout(() => {
                 animate[index].style.display = "none";
-            }, 250);
+            }, 125);
         }
     }
 
@@ -127,7 +127,7 @@ function animateMenu(menu){
         animate[1].style.display = "block";
         animate[2].style.display = "block";
         animate[3].style.display = "block";
-    }, 1000);
+    }, 500);
 }
 function ScrollToPart(part) {
     if (isMobile) {
@@ -147,4 +147,30 @@ function ScrollToPart(part) {
             window.scrollTo(0, document.getElementById("shop").offsetTop - 200);
         }
     }
+}
+
+function Back(){
+    const buySector = document.getElementsByClassName("buySector");
+
+    buySector[0].style.display = "none";
+}
+
+function Buy(item){
+    const buySector = document.getElementsByClassName("buySector");
+    const itemImg = document.getElementsByClassName("itemImg");
+    if(item == 'Statue'){
+        itemImg[0].src = 'Images/Statue.avif';
+    } else if(item == 'Pillow'){
+        itemImg[0].src = 'Images/Pillow.jpg';
+    } else if(item == 'Tshirt'){
+        itemImg[0].src = 'Images/Tshirt.webp';
+    } else if(item == 'Poster'){
+        itemImg[0].src = 'Images/Poster.jpg';
+    } else if(item == 'Mask'){
+        itemImg[0].src = 'Images/Mask.webp';
+    } else if(item == 'Car'){
+        itemImg[0].src = 'Images/Car.jpg';
+    }
+
+    buySector[0].style.display = "block";
 }
